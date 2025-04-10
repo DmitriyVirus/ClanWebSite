@@ -1,5 +1,35 @@
+/* Общие стили */
 body {
-  font-family: sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Стили для шапки */
+.flaming-header {
+  background-color: black;
+  padding: 60px 0;
   text-align: center;
-  margin-top: 50px;
+}
+
+/* Анимированная надпись */
+.flaming-text {
+  font-size: 64px;
+  font-weight: bold;
+  background: linear-gradient(orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  animation: flicker 1s infinite;
+}
+
+/* Анимация огня */
+@keyframes flicker {
+  0%   { opacity: 1;    text-shadow: 0 0 5px red, 0 0 10px orange, 0 0 20px yellow; }
+  20%  { opacity: 0.8;  text-shadow: 0 0 10px red, 0 0 15px orange; }
+  40%  { opacity: 1;    text-shadow: 0 0 5px red, 0 0 10px orange; }
+  60%  { opacity: 0.9;  text-shadow: 0 0 15px red, 0 0 20px orange, 0 0 30px yellow; }
+  80%  { opacity: 1;    text-shadow: 0 0 5px red, 0 0 10px orange; }
+  100% { opacity: 0.95; text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 40px yellow; }
 }
