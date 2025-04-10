@@ -52,6 +52,8 @@ body {
     flex: 1;
     min-width: 250px;
     text-align: center;
+    font-family: 'Ruslan Display', cursive;  /* применяем тот же шрифт */
+    line-height: 1.5;  /* увеличиваем межстрочный интервал для удобства чтения */
 }
 
 .content-container .right img {
