@@ -47,6 +47,42 @@ body {
     line-height: 1.5;  /* увеличиваем межстрочный интервал для удобства чтения */    
 }
 
+/* Контейнер для картинок в левой части */
+.left-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Индивидуальная картинка в левой части */
+.left-image {
+    text-align: center;
+}
+
+.left-image img {
+    width: 100%;
+    max-width: 150px; /* Уменьшаем ширину картинок в левой части в 2 раза */
+    height: auto;
+}
+
+.left-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Стили при наведении на кнопку */
+.left-button:hover {
+    background-color: #0077b3;
+}
+
 /* Правая часть */
 .content-container .right {
     flex: 1;
@@ -62,25 +98,7 @@ body {
 
 .content-container .right img {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Оставляем изображение справа с максимальной шириной 300px */
     height: auto;
     margin-top: 10px;
-}
-
-/* Стили для кнопки */
-.telegram-button {
-    display: inline-block;
-    background-color: #0088cc; /* Цвет фона кнопки */
-    color: white; /* Цвет текста */
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    text-decoration: none; /* Убираем подчеркивание */
-    border-radius: 5px; /* Скругляем углы */
-    margin-top: 20px; /* Отступ сверху */
-    transition: background-color 0.3s ease;
-}
-
-/* Стили при наведении на кнопку */
-.telegram-button:hover {
-    background-color: #0077b3; /* Темный цвет при наведении */
 }
