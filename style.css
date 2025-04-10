@@ -62,3 +62,21 @@ body {
     height: auto;
     margin-top: 10px;
 }
+
+/* Стили для кнопки */
+.telegram-button {
+    display: inline-block;
+    background-color: #0088cc; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругляем углы */
+    margin-top: 20px; /* Отступ сверху */
+    transition: background-color 0.3s ease;
+}
+
+/* Стили при наведении на кнопку */
+.telegram-button:hover {
+    background-color: #0077b3; /* Темный цвет при наведении */
+}
