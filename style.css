@@ -1,99 +1,12 @@
 /* Общие стили */
 body {
     margin: 0;
-    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Arial Black', sans-serif;
-}
-
-.fire-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-/* Основной текст с огненным эффектом */
-.fire-text {
-    font-size: 6rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 20px;
-    display: inline-block;
-    position: relative;
-    
-    /* Запасной вариант для старых браузеров */
-    color: #ff6600;
-    text-shadow: 0 0 10px #ff3300, 
-                 0 0 20px #ff0000,
-                 0 0 30px #ff0000,
-                 0 0 40px #ff0000;
-}
-
-/* Улучшенный эффект для современных браузеров */
-@supports (background-blend-mode: multiply) or (-webkit-background-clip: text) {
-    .fire-text {
-        color: transparent;
-        background: linear-gradient(to bottom, #ffaa00, #ff3300);
-        -webkit-background-clip: text;
-        background-clip: text;
-        text-shadow: none;
-        animation: fire-pulse 0.8s infinite alternate;
-    }
-
-    /* Анимированные искры */
-    .fire-text::after {
-        content: '';
-        position: absolute;
-        top: -10px;
-        left: 0;
-        right: 0;
-        height: 20px;
-        background: radial-gradient(ellipse at center, rgba(255,100,0,0.8) 0%, rgba(255,50,0,0) 70%);
-        animation: spark 1s infinite ease-out;
-    }
-}
-
-/* Анимация мерцания огня */
-@keyframes fire-pulse {
-    0%, 100% {
-        opacity: 0.9;
-        background-size: 100% 100%;
-    }
-    50% {
-        opacity: 1;
-        background-size: 110% 110%;
-    }
-}
-
-/* Анимация искр */
-@keyframes spark {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2);
-        opacity: 0;
-    }
-}
-
-/* SVG фильтр для усиления эффекта */
-.fire-text svg {
-    position: absolute;
-    width: 0;
-    height: 0;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .fire-text {
-        font-size: 3rem;
-    }
+    background-image: url('https://github.com/DmitriyVirus/ClanWebSite/raw/main/Background.png'); /* Прямая ссылка на картинку */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
