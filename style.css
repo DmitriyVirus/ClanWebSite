@@ -1,41 +1,92 @@
+/* Общие стили */
 body {
   margin: 0;
   background-color: black;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 .fire-header {
   height: 300px;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
-
-.fire-text-container {
-  position: relative;
-  display: inline-block;
-}
-
-.fire-background {
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  object-fit: cover;
-  z-index: 1;
-  mix-blend-mode: screen; /* "наслаивает" огонь */
-  opacity: 0.8;
+  background-color: black;
 }
 
 .fire-text {
-  font-size: 72px;
+  font-size: 80px;
   font-weight: bold;
-  color: white;
-  z-index: 2;
+  color: transparent;
+  background: linear-gradient(to top, red, orange, yellow);
+  -webkit-background-clip: text; /* Окрашивает текст градиентом */
   position: relative;
+  animation: flicker 1s infinite ease-in-out;
   text-transform: uppercase;
   letter-spacing: 5px;
+  text-align: center;
+}
+
+/* Эффект языков огня */
+.fire-text::before,
+.fire-text::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255, 165, 0, 0.9), rgba(255, 69, 0, 0.8), rgba(255, 0, 0, 0.7));
+  z-index: -1;
+  animation: fire-flame 1s infinite ease-in-out;
+}
+
+.fire-text::before {
+  left: 10%;
+  bottom: -10%;
+  animation-delay: 0.2s;
+}
+
+.fire-text::after {
+  right: 10%;
+  bottom: -10%;
+  animation-delay: 0.4s;
+}
+
+/* Анимация пламени */
+@keyframes fire-flame {
+  0% {
+    height: 50px;
+    transform: translateY(0) scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    height: 70px;
+    transform: translateY(-20px) scaleX(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    height: 50px;
+    transform: translateY(0) scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* Анимация пламени для текста */
+@keyframes flicker {
+  0% {
+    text-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow, 0 0 20px red;
+  }
+  20% {
+    text-shadow: 0 0 10px red, 0 0 15px orange, 0 0 25px yellow;
+  }
+  40% {
+    text-shadow: 0 0 15px red, 0 0 20px orange, 0 0 30px yellow, 0 0 40px red;
+  }
+  60% {
+    text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 35px yellow;
+  }
+  80% {
+    text-shadow: 0 0 15px red, 0 0 25px orange, 0 0 45px yellow;
+  }
+  100% {
+    text-shadow: 0 0 20px red, 0 0 30px orange, 0 0 50px yellow;
+  }
 }
