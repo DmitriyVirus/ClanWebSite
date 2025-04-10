@@ -55,6 +55,7 @@ body {
     align-items: center; /* Центрируем по горизонтали */
     gap: 20px;
     margin-top: 30px;
+    height: 200px; /* Устанавливаем фиксированную высоту для центровки */
 }
 
 /* Индивидуальная картинка в левой части */
@@ -65,7 +66,7 @@ body {
 }
 
 /* Стили для кнопки */
-.telegram-button {
+.left-button {
     display: inline-block;
     background-color: #0088cc; /* Цвет фона кнопки */
     color: white; /* Цвет текста */
@@ -73,13 +74,30 @@ body {
     font-size: 1.2rem;
     text-decoration: none; /* Убираем подчеркивание */
     border-radius: 5px; /* Скругляем углы */
-    margin-top: 20px; /* Отступ сверху */
+    transition: background-color 0.3s ease;
+}
+
+/* Стили при наведении на кнопку */
+.left-button:hover {
+    background-color: #0077b3; /* Темный цвет при наведении */
+}
+
+/* Стили для кнопки в правой части */
+.telegram-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
 /* Стили при наведении на кнопку */
 .telegram-button:hover {
-    background-color: #0077b3; /* Темный цвет при наведении */
+    background-color: #0077b3;
 }
 
 /* Правая часть */
