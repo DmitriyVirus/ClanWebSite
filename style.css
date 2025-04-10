@@ -5,8 +5,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('https://github.com/DmitriyVirus/ClanWebSite/raw/main/Background.png'); /* Прямая ссылка на картинку */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #000; /* Черный фон */
+    flex-direction: column; /* Для вертикального выравнивания */
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px; /* отступ сверху */
+}
+
+img {
+    max-width: 80%; /* Ограничиваем размер изображения */
+    height: auto; /* Сохраняем пропорции изображения */
 }
