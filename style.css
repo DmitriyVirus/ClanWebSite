@@ -38,8 +38,8 @@ body {
     min-width: 250px;
     font-size: 1.2rem;
     position: relative;
-    left: -20vw;  /* сдвиг влево от экрана */
-    top: 15vh;    /* сдвиг вниз от экрана */
+    left: 20vw;  /* сдвиг влево от экрана */
+    top: 20vh;    /* сдвиг вниз от экрана */
 }
 
 
