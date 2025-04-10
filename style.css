@@ -54,6 +54,10 @@ body {
     text-align: center;
     font-family: 'Ruslan Display', cursive;  /* применяем тот же шрифт */
     line-height: 1.5;  /* увеличиваем межстрочный интервал для удобства чтения */
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Размещаем элементы вертикально */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
 }
 
 .content-container .right img {
