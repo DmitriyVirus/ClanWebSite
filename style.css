@@ -33,12 +33,15 @@ body {
     flex-wrap: wrap;
 }
 
-/* Левая часть */
 .content-container .left {
     flex: 1;
     min-width: 250px;
     font-size: 1.2rem;
+    position: relative;
+    left: -20vw;  /* сдвиг влево от экрана */
+    top: 15vh;    /* сдвиг вниз от экрана */
 }
+
 
 /* Правая часть */
 .content-container .right {
