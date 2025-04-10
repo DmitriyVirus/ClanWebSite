@@ -1,35 +1,41 @@
-/* Общие стили */
 body {
   margin: 0;
   background-color: black;
-  color: white;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial Black', sans-serif;
 }
 
-/* Стили для шапки */
-.flaming-header {
+.fire-header {
+  height: 300px;
   background-color: black;
-  padding: 60px 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* Анимированная надпись */
-.flaming-text {
-  font-size: 64px;
-  font-weight: bold;
-  background: linear-gradient(orange, red);
-  -webkit-background-clip: text;
-  color: transparent;
+.fire-text-container {
   position: relative;
-  animation: flicker 1s infinite;
+  display: inline-block;
 }
 
-/* Анимация огня */
-@keyframes flicker {
-  0%   { opacity: 1;    text-shadow: 0 0 5px red, 0 0 10px orange, 0 0 20px yellow; }
-  20%  { opacity: 0.8;  text-shadow: 0 0 10px red, 0 0 15px orange; }
-  40%  { opacity: 1;    text-shadow: 0 0 5px red, 0 0 10px orange; }
-  60%  { opacity: 0.9;  text-shadow: 0 0 15px red, 0 0 20px orange, 0 0 30px yellow; }
-  80%  { opacity: 1;    text-shadow: 0 0 5px red, 0 0 10px orange; }
-  100% { opacity: 0.95; text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 40px yellow; }
+.fire-background {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  z-index: 1;
+  mix-blend-mode: screen; /* "наслаивает" огонь */
+  opacity: 0.8;
+}
+
+.fire-text {
+  font-size: 72px;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
