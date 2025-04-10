@@ -1,11 +1,23 @@
+/* Общие стили */
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-color: #000;
+    background-color: #000; /* Чёрный фон */
+}
 
-    background-image: url('https://raw.githubusercontent.com/DmitriyVirus/ClanWebSite/main/Background2.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover; /* или 'contain', если хочешь сохранять пропорции */
+/* Контейнер для картинки */
+.image-container {
+    width: 100%;        /* Ширина на весь экран */
+    height: 25vh;       /* Высота контейнера — 25% от экрана */
+    display: flex;
+    justify-content: center;  /* Центрируем по горизонтали */
+    align-items: flex-start;  /* К верхнему краю */
+    overflow: hidden;
+}
+
+/* Стили для картинки */
+.image-container img {
+    height: 100%;   /* Растягиваем по высоте контейнера */
+    width: auto;    /* Ширина автоматически рассчитывается */
+    object-fit: contain; /* Сохраняем пропорции без обрезки */
 }
