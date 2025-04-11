@@ -53,7 +53,7 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* ИЗМЕНЕНО: Центрируем по вертикали, но начинаем с верхней части */
     align-items: center; /* Центрируем по горизонтали */
-    gap: 0px;
+    gap: 20px;
     margin-top: 0px; /* ИЗМЕНЕНО: Уменьшаем отступ сверху */
     height: auto; /* ИЗМЕНЕНО: Даем элементам внутри контейнера занимать необходимое пространство */
 }
@@ -61,7 +61,7 @@ body {
 .left-image img {
     width: 100%;
     max-width: 150px; /* Уменьшаем ширину картинок в левой части */
-    height: auto;
+    height: 100%;
 }
 
 
