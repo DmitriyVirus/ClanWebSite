@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .right img {
@@ -76,7 +76,7 @@ body {
   align-items: flex-start;
   gap: 15px;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Одна карточка с подписью, картинкой и кнопкой */
@@ -85,7 +85,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -94,7 +94,7 @@ body {
   font-size: 1.2rem;
   color: #ffffff;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 10px;
   font-family: 'Ruslan Display', cursive;
 }
