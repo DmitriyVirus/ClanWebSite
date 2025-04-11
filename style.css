@@ -60,11 +60,10 @@ body {
 
 .left-image {
     display: flex;
-    max-width: 150px;
     flex-direction: column;
     justify-content: center; /* Центр по вертикали */
     align-items: center;     /* Центр по горизонтали */
-    height: 100%; /* или конкретная высота, например 300px */
+    height: 150px; /* или конкретная высота, например 300px */
 }
 
 /* Стили для кнопки */
