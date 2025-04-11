@@ -34,7 +34,7 @@ body {
   margin: 0 auto 20px auto; /* ↓ отступ до Telegram-блока */
   font-family: 'Ruslan Display', cursive;
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 0.7;
   padding: 0 20px;
 }
 
@@ -100,7 +100,7 @@ body {
 
 /* Заголовок под картинкой */
 .image-title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: center;
   margin-top: 5px;
