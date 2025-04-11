@@ -49,7 +49,7 @@ body {
 
 /* Контейнер для картинок и кнопки в левой части */
 .left-images {
-    height: 100px;
+    height: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* ИЗМЕНЕНО: Центрируем по вертикали, но начинаем с верхней части */
