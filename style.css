@@ -4,7 +4,7 @@ body {
   background-color: #000;
   font-family: Arial, sans-serif;
   color: white;
-  background-image: url('https://img.freepik.com/premium-vector/black-wall-with-red-crack-texture_1109882-8254.jpg?w=1060');
+  background-image: url('https://github.com/DmitriyVirus/ClanWebSite/blob/main/Back.png');
   background-size: cover; /* Картинка растягивается на весь экран */
   background-position: center center; /* Центрируем картинку */
   background-attachment: fixed; /* Картинка будет фиксирована при прокрутке */
