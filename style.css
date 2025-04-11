@@ -51,7 +51,7 @@ body {
 .left-images {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* ИЗМЕНЕНО: Центрируем по вертикали, но начинаем с верхней части */
+    justify-content: center; /* ИЗМЕНЕНО: Центрируем по вертикали, но начинаем с верхней части */
     align-items: center; /* Центрируем по горизонтали */
     gap: 20px;
     margin-top: 0px; /* ИЗМЕНЕНО: Уменьшаем отступ сверху */
