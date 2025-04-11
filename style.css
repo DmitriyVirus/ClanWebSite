@@ -35,62 +35,89 @@ body {
 
 /* Левая часть */
 .content-container .left {
-    flex: 1;
-    min-width: 350px;
+    flex-basis: 70%;
+    max-width: 70%;
     font-size: 1.2rem;
     position: relative;
-    left: 10px;  /* сдвиг влево от экрана */
+    left: 10px;
     right: 10px;
-    top: 0px;    /* сдвиг вниз от экрана */
-    overflow: hidden;  /* чтобы текст не выходил за пределы контейнера */
-    padding-right: 20px; /* немного отступа справа, чтобы текст не прижимался к краю */
-    font-family: 'Ruslan Display', cursive;  /* применяем готический шрифт */
-    line-height: 1.5;  /* увеличиваем межстрочный интервал для удобства чтения */    
+    top: 0px;
+    overflow: hidden;
+    padding-right: 20px;
+    font-family: 'Ruslan Display', cursive;
+    line-height: 1.5;
 }
 
 .left-images {
     display: flex;
-    flex-direction: row; /* ← ВАЖНО: ставим в ряд */
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 15px; /* Расстояние между карточками */
+    gap: 15px;
     margin-top: 20px;
 }
 
 .left-image {
     display: flex;
-    flex-direction: column; /* Картинка над кнопкой */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 300px;
 }
 
 .left-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     margin-top: 0;
 }
 
-
+/* Надписи над картинками */
+.image-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Ruslan Display', cursive;
+}
 
 /* Стили для кнопки */
 .left-button {
     display: inline-block;
-    background-color: #0088cc; /* Цвет фона кнопки */
-    color: white; /* Цвет текста */
-    padding: 10px 30px; /* ИЗМЕНЕНО: Уменьшаем отступы для более компактного вида */
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 30px;
     font-size: 1.2rem;
-    text-decoration: none; /* Убираем подчеркивание */
-    border-radius: 5px; /* Скругляем углы */
+    text-decoration: none;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
 
-/* Стили при наведении на кнопку */
 .left-button:hover {
-    background-color: #0077b3; /* Темный цвет при наведении */
+    background-color: #0077b3;
 }
 
-/* Стили для кнопки в правой части */
+/* Правая часть */
+.content-container .right {
+    flex-basis: 30%;
+    max-width: 30%;
+    min-width: 250px;
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container .right img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
 .telegram-button {
     display: inline-block;
     background-color: #0088cc;
@@ -103,35 +130,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Стили при наведении на кнопку */
 .telegram-button:hover {
     background-color: #0077b3;
-}
-
-/* Правая часть */
-.content-container .right {
-    flex: 1;
-    min-width: 250px;
-    text-align: center;
-    font-family: 'Ruslan Display', cursive;  /* применяем тот же шрифт */
-    line-height: 1.5;  /* увеличиваем межстрочный интервал для удобства чтения */
-    display: flex; /* Используем flexbox для выравнивания */
-    flex-direction: column; /* Размещаем элементы вертикально */
-    justify-content: center; /* Центрируем содержимое по вертикали */
-    align-items: center; /* Центрируем содержимое по горизонтали */
-}
-
-.content-container .right img {
-    width: 100%;
-    max-width: 300px; /* Оставляем изображение справа с максимальной шириной 300px */
-    height: auto;
-    margin-top: 10px;
-}
-
-.image-title {
-  font-size: 1.2rem;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: 'Ruslan Display', cursive;
 }
