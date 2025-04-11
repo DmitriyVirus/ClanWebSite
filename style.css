@@ -45,6 +45,11 @@ body {
   margin-bottom: 20px;
 }
 
+.content-container .right h2 {
+  margin-top: 5px;   /* Уменьшаем отступ сверху */
+  margin-bottom: 10px; /* Уменьшаем отступ снизу */
+}
+
 .right img {
   width: 100%;
   max-width: 300px;
