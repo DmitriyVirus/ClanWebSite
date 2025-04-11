@@ -62,6 +62,7 @@ body {
     width: 100%;
     max-width: 150px; /* Уменьшаем ширину картинок в левой части */
     height: 100px;
+    margin-top: 20px;
 }
 
 
