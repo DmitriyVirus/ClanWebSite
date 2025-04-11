@@ -61,7 +61,7 @@ body {
 .left-image img {
     width: 100%;
     max-width: 150px; /* Уменьшаем ширину картинок в левой части */
-    height: 100%;
+    height: 100px;
 }
 
 
