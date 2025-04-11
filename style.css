@@ -59,6 +59,14 @@ body {
     height: auto; /* ИЗМЕНЕНО: Даем элементам внутри контейнера занимать необходимое пространство */
 }
 
+.left-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Центрирует по вертикали */
+    height: 120px; /* если нужно задать жёсткую высоту каждому блоку */
+}
+
 .left-image img {
     width: 100%;
     max-width: 150px; /* Уменьшаем ширину картинок в левой части */
