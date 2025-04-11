@@ -1,135 +1,117 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
 }
 
 /* Верхняя картинка */
 .image-container {
-    width: 100%;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 .image-container img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
-/* Контейнер с двумя колонками */
+/* Контейнер с секциями */
 .content-container {
-    display: flex;
-    flex-direction: row;
-    padding: 40px;
-    color: white;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  color: white;
 }
 
-/* Левая часть */
-.content-container .left {
-    flex-basis: 70%;
-    max-width: 70%;
-    font-size: 1.2rem;
-    position: relative;
-    left: 10px;
-    right: 10px;
-    top: 0px;
-    overflow: hidden;
-    padding-right: 20px;
-    font-family: 'Ruslan Display', cursive;
-    line-height: 1.5;
+/* 1. Центрированный текст */
+.center-text {
+  text-align: center;
+  max-width: 800px;
+  font-family: 'Ruslan Display', cursive;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
-.left-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 20px;
+/* 2. Телеграм */
+.right {
+  text-align: center;
+  font-family: 'Ruslan Display', cursive;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.left-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 300px;
-}
-
-.left-image img {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0;
-}
-
-/* Надписи над картинками */
-.image-title {
-    font-size: 1.2rem;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: 'Ruslan Display', cursive;
-}
-
-/* Стили для кнопки */
-.left-button {
-    display: inline-block;
-    background-color: #0088cc;
-    color: white;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-.left-button:hover {
-    background-color: #0077b3;
-}
-
-/* Правая часть */
-.content-container .right {
-    flex-basis: 30%;
-    max-width: 30%;
-    min-width: 250px;
-    text-align: center;
-    font-family: 'Ruslan Display', cursive;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-container .right img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 10px;
+.right img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 10px;
 }
 
 .telegram-button {
-    display: inline-block;
-    background-color: #0088cc;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+  background-color: #0088cc;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .telegram-button:hover {
-    background-color: #0077b3;
+  background-color: #0077b3;
+}
+
+/* 3. Картинки с кнопками */
+.left-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.left-image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Ruslan Display', cursive;
+}
+
+.left-button {
+  background-color: #0088cc;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.left-button:hover {
+  background-color: #0077b3;
 }
