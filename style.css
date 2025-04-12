@@ -9,7 +9,7 @@ body {
 /* Верхняя картинка — уменьшенный нижний отступ */
 .image-container {
   width: 100%;
-  height: 25vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
